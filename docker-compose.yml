@@ -1,0 +1,29 @@
+
+version: "3.9"
+
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: bioweave
+      POSTGRES_PASSWORD: bioweave
+      POSTGRES_DB: bioweave
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  api:
+    build: .
+    environment:
+      - DATABASE_URL=postgresql+psycopg2://bioweave:bioweave@db:5432/bioweave
+      - BENCHLING_API_TOKEN=${BENCHLING_API_TOKEN}
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+volumes:
+  db_data:

@@ -1,0 +1,17 @@
+
+# Map diverse vendor column names to canonical assay fields
+- Subj_ID: USUBJID
+- Subject_ID: USUBJID
+- Sample_ID: USUBJID
+- VISITDAY: VISIT
+- Visit: VISIT
+- Analyte: ANALYTE
+- Analyte_Name: ANALYTE
+- Conc: CONC
+- Concentration: CONC
+- Units: UNIT
+- Unit: UNIT
+- QPlogPo/w: QPlogPo_w
+- CIQlogS: CIQlogS
+- QPPCaco: QPPCaco
+- QPPMDCK: QPPMDCK
