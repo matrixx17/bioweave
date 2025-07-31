@@ -7,9 +7,7 @@ Poor data integration also impedes the adoption of AI/ML in biotech. High-qualit
 We hope to create a tool that lets biotech firms automate their data processing so they can focus on what matters. 
 
 This is currently out‑of‑the‑box minimum‑viable backend that turns messy CRO/Instrument spreadsheets (CSV/Excel)
-into a clean, schema‑aligned, FAIR‑annotated table stored in Postgres—and (optionally) pushed to Benchling.
-
-> **Scope:** Spreadsheet → clean CSV + metadata. No frontend UI; interact via FastAPI docs (`/docs`).
+into a clean, schema‑aligned, FAIR‑annotated table stored in Postgres, and (optionally) pushed to Benchling.
 
 ---
 
